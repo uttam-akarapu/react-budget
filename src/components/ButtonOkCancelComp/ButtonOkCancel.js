@@ -5,9 +5,9 @@ import {Button} from "semantic-ui-react";
 const ButtonOkCancel = props => {
     return (
         <Button.Group style={{marginTop:20}}>
-          <Button primary>Ok</Button>
+          <Button primary onClick={()=>props.addEntryHandler(props.desc,props.value)}>Ok</Button>
           <Button.Content/>
-          <Button secondary>Cancel</Button>
+          <Button secondary onClick={props.resetEntryHandler}>Cancel</Button>
         </Button.Group>
     )
 }

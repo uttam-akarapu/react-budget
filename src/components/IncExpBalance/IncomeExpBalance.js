@@ -9,11 +9,11 @@ const IncomeExpBalance = props => {
         <Grid columns={2} divided>
           <Grid.Row>
             <Grid.Column>
-            <BalanceAmt size="tiny" color="green" expenses="Incoming:" value="1000.00"/>
+            <BalanceAmt size="tiny" color="green" expenses="Credit" value="1000.00"/>
             </Grid.Column>
 
             <Grid.Column>
-             <BalanceAmt size="tiny" color="red" expenses="Expenses:" value="500.00"/>
+             <BalanceAmt size="tiny" color="red" expenses="Debit" value="500.00"/>
             </Grid.Column>
           </Grid.Row>
         </Grid>

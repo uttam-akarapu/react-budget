@@ -15,7 +15,7 @@ const History = props => {
             </Grid.Column>
             <Grid.Column width={3}>
               <Icon name="edit" />
-              <Icon name="trash" />
+              <Icon name="trash" onClick={()=>props.deleteEntryHandler(props.id)} />
             </Grid.Column>
           </Grid.Row>
         </Grid>

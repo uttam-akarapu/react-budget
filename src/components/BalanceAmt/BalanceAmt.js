@@ -5,7 +5,7 @@ import { Statistic } from 'semantic-ui-react';
 const BalanceAmt = props => {
     return (
         <Statistic size={props.size} color={props.color}>
-                <Statistic.Label>{props.expenses}</Statistic.Label>
+                <Statistic.Label textAlign={props.textAlign}>{props.expenses}</Statistic.Label>
                 <Statistic.Value>{props.value}</Statistic.Value>
               </Statistic>
     )
