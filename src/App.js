@@ -1,24 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
-import {
-  Container,
-  Header,
-  Statistic,
-  Segment,
-  Grid,
-  Icon,
-  Form,
-  Button,
-  ButtonGroup,
-} from "semantic-ui-react";
-
+import {Container} from "semantic-ui-react";
 import MainHeader from "./components/MainHeader/MainHeader";
 import TransactionForm from "./components/TransactionForm/TransactionForm";
 import BalanceAmt from "./components/BalanceAmt/BalanceAmt";
 import History from "./components/History/History";
+import HistoryData from "./components/History/HistoryData";
 import IncomeExpBalance from "./components/IncExpBalance/IncomeExpBalance";
+import { useState } from "react";
 
 function App() {
+ 
   return (
     <Container>
       <MainHeader title="Budget" type="h1" />
@@ -26,9 +18,8 @@ function App() {
       <IncomeExpBalance />
 
       <MainHeader title="History" type="h3" textAlign="left" />
-      <History isExpense={true} desc="abcd" value="$100.00" />
-      <History isExpense={false} desc="efgh" value="$200.00" />
-      <History isExpense={true} desc="ijkl" value="$300.00" />
+      <HistoryData/>
+            
 
       <MainHeader title="Add New Transaction" type="h3" textAlign="left" />
       <TransactionForm />
@@ -37,3 +28,5 @@ function App() {
 }
 
 export default App;
+
+
